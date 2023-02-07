@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.fundo{
+    background-image: url(bg.png);
+    background-color: rgb(247, 247, 248);
+    height: 100vh;
+    color: white;
+    font-family: "Poppins" , sans-serif;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size:100%;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.calculadora{
+    position: absolute;
+    background-color: rgba(28, 80, 145);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    padding: 20px;
+    overflow: auto;
+}
+
+.botao{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 3px;
+    background-color: rgb(128, 156, 205);
+    border-radius : 10px;
+    color: white;
+    font-family: "Poppins" , sans-serif;
+}
+
+.btn{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 3px;
+    background-color: rgb(230, 56, 136);
+    border-radius : 10px;
+    color: white;
+    font-family: "Poppins" , sans-serif;
+}
+
+.botao:hover{
+    background-color: rgb(81, 129, 191);
+}
+
+.btn:hover{
+    background-color: rgb(178, 7, 87);
+}
+
+#resultado{
+    width: 207px;
+    background-color: white;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+}
+
+img{
+    position: absolute;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+    
+}
+
+@media screen and (max-width:600px){
+    .fundo {
+        display:flex ;
+    }
+    .calculadora{
+        display:flex ;
+    }
+}
